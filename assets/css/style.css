@@ -1,4 +1,9 @@
 header{
     background-color: rgb(124, 112, 212);
     height: 20vh;
+    margin-bottom:1%;
+    
 }
+h2{
+    display: block;
+  }
