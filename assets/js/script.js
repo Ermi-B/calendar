@@ -34,6 +34,8 @@ for (let i = 0; i < 24; i++) {
     var div2 = $('<div>') //section 2 to display the input section to type in task name
     div2.addClass('col-10');
     var inputEl = $('<input>')
+
+    //color-coding depending on time if its past present or future
     if(i==timeInt){
         inputEl.attr('style','height:70px; border: black solid 1px; width:100%; background-color:red;');
     }else if(i<=timeInt){
@@ -41,15 +43,15 @@ for (let i = 0; i < 24; i++) {
     }else{
         inputEl.attr('style','height:70px; border: black solid 1px; width:100%; background-color:green;');
     } 
-    div2.append(inputEl)
-
-
-    
+    div2.append(inputEl)    
     row.append(div2);  //appending section 2 into a row
 
     var div3 = $('<div>') //section 3 - save icon
     div3.addClass('col-1');
-    
+    var saveButton = $('<button>')
+    saveButton.attr('style','height:40px; width:50px; margin-top:10px; background-color:rgb(124, 112, 212); color:white;');
+    saveButton.text('Save')
+    div3.append(saveButton)
     div3.attr('style',"border:1px solid black; border-right:none;")
     row.append(div3); //appending section 3 into the row  
     
