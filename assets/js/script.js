@@ -82,3 +82,12 @@ for (let i = 0; i < 24; i++) {
     
     
 }
+
+$('#reset-button').on('click',function(){
+    var confirmation = confirm('Are you sure you want to reset your scedule?')
+    if(confirmation){
+        localStorage.clear()
+        location.reload()
+    }
+    
+})
