@@ -65,7 +65,11 @@ for (let i = 0; i < 24; i++) {
     
     
     container.append(row); //entire row gets append to the container
+
+    //getting from local storage
     var localContent = localStorage.getItem(i)
+    
+    //displaying what we grab from local storage
     var inputContent = $(`#input-element-${i}`).val(localContent)
     
     
